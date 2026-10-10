@@ -1,5 +1,5 @@
 
-name: Build Job
+name: Build WF
 
 on:
   push:
