@@ -55,6 +55,11 @@ public class UserController {
     }
 
     @GetMapping("/")
+    public String welcomePage(Model model) {
+        return "welcome";
+    }
+
+    @GetMapping("/login")
     public String login(Model model, @RequestParam(value = "error", required = false) String error,
                         @RequestParam(value = "logout", required = false) String logout) {
         if (error != null) {
