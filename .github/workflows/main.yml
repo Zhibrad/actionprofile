@@ -1,4 +1,3 @@
-```yaml
 name: Vprofile CICD Workflow
 
 on:
@@ -98,4 +97,3 @@ jobs:
           name: trivy-scan-results
           path: trivy-results.json
           if-no-files-found: error
-```
